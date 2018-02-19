@@ -9,7 +9,7 @@ const BookSchema = new Schema({
 const AuthorSchema = new Schema({
     name: String,
     age: Number,
-    books : [booksSchema]
+    books: [BookSchema]
 });
 
 const Author = mongoose.model('author', AuthorSchema);
